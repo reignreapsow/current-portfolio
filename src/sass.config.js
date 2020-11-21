@@ -1,13 +1,13 @@
-var sass = require('sass');
+// var sass = require('node-sass');
 
-sass.render({
-  file: scss_filename
-}, function(err, result) {
-  /* ... */
-});
+// sass.render({
+//   file: '.sass'
+// }, function(err, result) {
+//   /* ... */
+// });
 
 // OR
 
-var result = sass.renderSync({
-  file: scss_filename
-});
+// var result = sass.renderSync({
+//   file: scss_filename
+// });
