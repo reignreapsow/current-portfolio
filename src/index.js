@@ -1,20 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-// import './sass.config';
-import './src/style.scss'
+// // import './index.css';
+//import App from './App';
+
+function buttonClick () {
+
+}
+
+const App = () => {
+  render (
+    <div className="App">
+
+      <header className="header">
+        <div>
+          <h1>Reign Westry</h1> 
+        </div>
+
+        <nav className='mainNav'>
+          <ul>
+            <li>Home</li>
+            <li>Portfolio</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+      <div>
+        <button onClick={buttonClick}>Click</button>
+      </div>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    </div>
+  );
+}
+
+// const App 
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// console.log( 'webpack working!')
